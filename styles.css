@@ -1,0 +1,16 @@
+.dietGrid {
+    display: grid;
+    grid-template-columns: 10% repeat(4, 15%) 10%;
+}
+
+.eatThisGrid {
+    grid-column: 2/4;
+}
+
+.notThatGrid {
+    grid-column: 4/6;
+}
+
+.gridImage {
+    height: 50px;
+}
