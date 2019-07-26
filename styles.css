@@ -34,7 +34,10 @@ nav{
 
 .dietGrid {
     display: grid;
-    grid-template-columns: 10% repeat(4, 15%) 10%;
+    grid-template-columns: 10% repeat(4, 20%) 10%;
+    grid-template-rows: repeat(3, 250px);
+    grid-gap: 25px;
+    justify-items: center;
 }
 
 .eatThisGrid {
@@ -45,6 +48,25 @@ nav{
     grid-column: 4/6;
 }
 
+.gridImageContainer {
+    grid-column: span 2;
+    height: 250px;
+}
+
 .gridImage {
-    height: 50px;
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+}
+
+.gridImage-4 {
+    width: 200px;
+    height: 200px;
+    object-fit: fill;
+}
+
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
 }
